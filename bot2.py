@@ -1,8 +1,6 @@
 import logging
 import requests
 from bs4 import BeautifulSoup as bs
-import schedule
-import datetime
 import re
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
