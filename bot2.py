@@ -20,7 +20,7 @@ def get_gold_price(update, context):
     parsed_data = bs(data.content, "html.parser")
     gold_price = parsed_data.find_all(
             "tr", class_="odd_row")
-    value = gold_price[1].find_all("td")[1].text.strip()
+    value = gold_price[3].find_all("td")[1].text.strip()
     update.message.reply_text(value)
     
 
